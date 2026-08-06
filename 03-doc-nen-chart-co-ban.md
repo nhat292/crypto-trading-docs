@@ -17,6 +17,29 @@ giá đóng cửa (Close), giá cao nhất (High), giá thấp nhất (Low).
 - **Thân nến dài, không râu (hoặc râu rất ngắn)**: xu hướng dứt khoát, một
   phe áp đảo hoàn toàn trong khung thời gian đó.
 
+## 📶 Khối lượng giao dịch (Volume)
+
+Volume là tổng khối lượng coin được mua bán trong một khung thời gian,
+thường hiển thị dạng cột ngay dưới biểu đồ giá (cột xanh khi nến tăng, cột
+đỏ khi nến giảm). Volume cho biết **có bao nhiêu người/tiền thật sự đứng sau
+một cây nến** — một cây nến đẹp nhưng volume nhỏ giọt đáng tin cậy thấp hơn
+nhiều so với cây nến cùng hình dạng nhưng volume tăng vọt.
+
+- **Xác nhận breakout**: giá phá vỡ vùng S/R kèm volume tăng đột biến →
+  breakout đáng tin. Phá vỡ với volume thấp → nghi ngờ false breakout, dễ bị
+  đảo ngược lại ngay sau đó (xem "Quét hai đầu" ở file 09 và Liquidity Sweep
+  ở file 11).
+- **Volume climax**: volume đột biến cực lớn sau một chuỗi tăng/giảm dài
+  thường là dấu hiệu kiệt sức (exhaustion) của xu hướng — khả năng đảo chiều
+  hoặc điều chỉnh mạnh sắp tới.
+- **Volume divergence**: giá tạo đỉnh/đáy mới nhưng volume của đợt đó lại
+  giảm dần so với đợt trước → xu hướng đang yếu đi dù giá vẫn đang đi, cần
+  thận trọng khi vào lệnh đuổi theo.
+
+> [!TIP]
+> Luôn nhìn volume song song với nến, đừng đọc nến một mình. Một cây nến
+> phá vỡ mạnh nhưng volume nhỏ giọt thường là bẫy hơn là tín hiệu thật.
+
 ## 📏 Support & Resistance (S/R)
 
 - 🟩 **Support (hỗ trợ)**: vùng giá mà lực mua từng đủ mạnh để chặn đà giảm,
@@ -55,6 +78,44 @@ lệnh theo xu hướng lớn thay vì đuổi giá.
 > Luôn xác định trend ở khung thời gian **lớn hơn** (Daily/4H) trước khi tìm
 > điểm vào lệnh ở khung nhỏ hơn — đây chính là câu hỏi số 1 trong checklist
 > vào lệnh (file 04).
+
+## 📉 Các chỉ báo kỹ thuật phổ biến (Indicators)
+
+Chỉ báo kỹ thuật được tính toán từ giá/volume quá khứ — luôn là công cụ
+**hỗ trợ đọc lại quá khứ (lagging)**, không dự đoán tương lai. Chia làm 3
+nhóm theo cách hiển thị trên chart.
+
+### 🔵 Nhóm vẽ đè lên biểu đồ giá (Overlay)
+
+| Chỉ báo | Tên đầy đủ | Đo gì | Cách đọc nhanh |
+|---|---|---|---|
+| MA | Moving Average (đường trung bình động) | Xu hướng giá trung bình qua N kỳ | Giá nằm trên MA = thiên hướng tăng; MA ngắn cắt lên MA dài (golden cross) = tín hiệu tăng, cắt xuống (death cross) = tín hiệu giảm |
+| BOLL | Bollinger Bands (dải Bollinger) | Biến động (volatility) quanh đường trung bình | Dải co hẹp lại = biến động thấp, chuẩn bị bùng nổ; giá chạm dải ngoài không tự động là đảo chiều, cần xác nhận thêm bằng nến/volume |
+| SAR | Parabolic SAR | Điểm dừng & đảo chiều xu hướng | Chấm nằm dưới nến = đang uptrend, chấm nằm trên nến = đang downtrend; chấm nhảy sang phía đối diện = cảnh báo đổi xu hướng, hay dùng làm mốc trailing stop |
+| AVL | Average Line | Đường trung bình giá rút gọn (một số sàn như Binance cung cấp riêng) | Đọc tương tự MA, dùng tham khảo xu hướng nhanh, không thay thế MA/EMA chuẩn |
+| SuperTrend | SuperTrend (thường viết tắt SUPER/SUPPER) | Xu hướng dựa trên biên độ biến động thật ATR | Một đường bám sát giá, đổi màu xanh/đỏ khi xu hướng đổi chiều; đường này cũng thường dùng làm mốc trailing stop |
+
+### 🟣 Nhóm dao động (Oscillator — hiển thị khung phụ riêng)
+
+| Chỉ báo | Tên đầy đủ | Đo gì | Cách đọc nhanh |
+|---|---|---|---|
+| MACD | Moving Average Convergence Divergence | Động lượng qua chênh lệch giữa 2 đường EMA | Đường MACD cắt lên Signal = tín hiệu mua, cắt xuống = tín hiệu bán; Histogram co lại = động lượng yếu đi; phân kỳ MACD-giá = cảnh báo đảo chiều |
+| RSI | Relative Strength Index | Tốc độ & độ lớn thay đổi giá, dao động 0-100 | Trên 70 = quá mua (overbought), dưới 30 = quá bán (oversold); phân kỳ RSI-giá là tín hiệu đáng chú ý |
+| KDJ | Stochastic mở rộng (3 đường K, D, J) | Vị trí giá đóng cửa so với biên độ cao/thấp gần đây | J vượt mạnh ra ngoài khoảng 0-100 = tín hiệu cực đoan hơn K/D; J cắt K/D theo hướng nào thường báo hiệu theo hướng đó |
+| WR | Williams %R | Tương tự Stochastic nhưng đảo trục, dao động 0 đến -100 | Gần 0 = quá mua, gần -100 = quá bán |
+
+### 🟢 Nhóm khối lượng
+
+| Chỉ báo | Tên đầy đủ | Đo gì | Cách đọc nhanh |
+|---|---|---|---|
+| OBV | On-Balance Volume | Dòng tiền tích luỹ qua volume theo hướng giá | OBV tăng cùng chiều với giá = xác nhận xu hướng; giá tạo đỉnh/đáy mới nhưng OBV không xác nhận (phân kỳ) = xu hướng đang yếu, cẩn trọng khi vào lệnh đuổi theo |
+
+> [!WARNING]
+> Không dùng một chỉ báo đơn lẻ để quyết định vào lệnh. Càng nhồi nhiều chỉ
+> báo lên chart càng dễ rối tín hiệu ("indicator paralysis") — chọn tối đa
+> 1-2 chỉ báo phù hợp phong cách của mình, dùng để **bổ trợ** cho nến, S/R,
+> volume và cấu trúc thị trường (file 11), không thay thế checklist 5 câu
+> hỏi ở [✅ 04-quy-tac-vao-lenh.md](04-quy-tac-vao-lenh.md).
 
 ## 🔍 Đa khung thời gian (Multi-timeframe)
 

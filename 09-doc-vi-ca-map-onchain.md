@@ -62,3 +62,11 @@ flowchart TD
 > Đây là công cụ hỗ trợ đọc bối cảnh, không thay thế cho quy tắc vào lệnh ở
 > [✅ 04-quy-tac-vao-lenh.md](04-quy-tac-vao-lenh.md) — vẫn cần đủ confluence
 > và quản trị rủi ro đúng cách trước khi hành động theo bất kỳ kịch bản nào.
+
+## 🔗 Xem thêm: đọc vị qua price action
+
+File này đọc vị smart money qua **dữ liệu blockchain thật** (inflow/outflow,
+reserve, OI). Muốn đọc dấu vết smart money **trực tiếp trên biểu đồ giá**
+(liquidity, Order Block, BOS/CHoCH...), xem
+[🧭 11-smart-money-concepts.md](11-smart-money-concepts.md) — hai cách tiếp
+cận này bổ trợ cho nhau, không thay thế nhau.

@@ -39,6 +39,12 @@ nến di chuyển mạnh). Thị trường có xu hướng quay lại lấp đ�
 khi tiếp tục xu hướng chính — nhiều trader dùng vùng này làm điểm chờ vào
 lệnh theo xu hướng lớn thay vì đuổi giá.
 
+> [!NOTE]
+> FVG chỉ là một mảnh ghép nhỏ trong bức tranh lớn hơn về cách tổ chức/cá
+> mập để lại dấu vết trên biểu đồ giá. Xem chi tiết ở
+> [🧭 11-smart-money-concepts.md](11-smart-money-concepts.md) (Liquidity,
+> Order Block, BOS/CHoCH, Premium/Discount zone).
+
 ## 📈 Xác định xu hướng (Trend)
 
 - 📈 **Uptrend**: đáy sau cao hơn đáy trước, đỉnh sau cao hơn đỉnh trước.

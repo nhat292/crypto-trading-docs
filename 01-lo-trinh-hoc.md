@@ -87,12 +87,24 @@ flowchart LR
 
 ## 🐋 Giai đoạn 6 — Đọc hành vi dòng tiền lớn (nâng cao)
 
+**On-chain (dữ liệu blockchain):**
+
 - [ ] Exchange inflow/outflow là gì
 - [ ] Exchange reserve và ý nghĩa khi tăng/giảm
 - [ ] Open Interest (OI) trên thị trường phái sinh
 - [ ] Phân biệt gom hàng thật vs bẫy tăng giá (bull trap) vs bẫy giảm giá (bear trap)
 
 → Xem chi tiết: [🐋 09-doc-vi-ca-map-onchain.md](09-doc-vi-ca-map-onchain.md)
+
+**Smart Money Concepts (đọc dấu vết qua price action):**
+
+- [ ] Market structure: HH/HL (uptrend), LH/LL (downtrend), swing high/low
+- [ ] Liquidity: buy-side/sell-side, vì sao giá hay bị "quét" trước khi đảo chiều
+- [ ] Order Block, Breaker Block
+- [ ] BOS (Break of Structure) vs CHoCH (Change of Character)
+- [ ] Premium/Discount zone, Inducement, Mitigation
+
+→ Xem chi tiết: [🧭 11-smart-money-concepts.md](11-smart-money-concepts.md)
 
 ## 📓 Giai đoạn 7 — Kỷ luật dài hạn
 

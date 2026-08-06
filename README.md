@@ -38,6 +38,7 @@ flowchart TD
     G --> H["🕐 08 · Khung giờ giao dịch"]
     H --> I["🐋 09 · Đọc vị cá mập"]
     I --> J["📓 10 · Nhật ký giao dịch"]
+    I --> K["🧭 11 · Smart Money Concepts"]
 
     classDef foundation fill:#3b82f6,stroke:#1e40af,color:#fff
     classDef critical fill:#ef4444,stroke:#991b1b,color:#fff
@@ -49,7 +50,7 @@ flowchart TD
     class D,E critical
     class F psychology
     class G,H macro
-    class I,J advanced
+    class I,J,K advanced
 ```
 
 🔵 Nền tảng → 🔴 Quy tắc & rủi ro (quan trọng nhất) → 🟣 Tâm lý → 🟠 Vĩ mô/thời
@@ -69,11 +70,12 @@ flowchart TD
 | 8 | [🕐 Khung giờ giao dịch](08-khung-gio-giao-dich.md) | Phiên Á/Âu/Mỹ và giờ "tử thần" |
 | 9 | [🐋 Đọc vị cá mập & on-chain](09-doc-vi-ca-map-onchain.md) | Inflow/outflow, exchange reserve, OI |
 | 10 | [📓 Nhật ký giao dịch](10-nhat-ky-giao-dich.md) | Mẫu nhật ký và checklist review |
+| 11 | [🧭 Smart Money Concepts](11-smart-money-concepts.md) | Liquidity, Order Block, BOS/CHoCH, Premium/Discount |
 
 ## 🧭 Cách dùng bộ tài liệu
 
 > [!TIP]
-> **Mới hoàn toàn?** Đọc lần lượt từ file 01 đến 10, đừng bỏ qua phần kiến
+> **Mới hoàn toàn?** Đọc lần lượt từ file 01 đến 11, đừng bỏ qua phần kiến
 > thức nền (02, 03) dù có thể thấy "cơ bản quá" — đây là nền móng để hiểu các
 > phần sau.
 

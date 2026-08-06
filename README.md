@@ -5,6 +5,13 @@ Bộ tài liệu này gom toàn bộ kiến thức cần thiết cho một trade
 tới quy tắc vào lệnh và quản trị rủi ro. Nội dung được chia nhỏ theo từng chủ
 đề để dễ đọc và dễ quay lại tra cứu.
 
+**Keywords**: crypto trading, cryptocurrency, bitcoin trading, technical
+analysis, risk management, trading psychology, smart money concepts, ICT
+trading, price action, market structure, liquidity, order block, macro
+economics, on-chain analysis, whale watching, futures trading, leverage
+trading, candlestick patterns, FOMO, trading journal, trading checklist,
+beginner trading guide, day trading, crypto education.
+
 ## 🔑 Chú giải ký hiệu dùng xuyên suốt bộ tài liệu
 
 > [!NOTE]

@@ -75,7 +75,11 @@ lãi suất = tiền rẻ quay lại = Crypto có thể bay.**
   rút tiền khỏi kênh mạo hiểm (Altcoin) để mua trái phiếu an toàn. US10Y
   giảm → dòng tiền "đói lợi nhuận" tràn vào Crypto.
 
-## 🧭 Mẹo thực chiến đọc lịch kinh tế (ForexFactory)
+## 🧭 Mẹo thực chiến đọc lịch kinh tế (ForexFactory, TradingEconomics)
+
+Hai nguồn lịch kinh tế phổ biến để theo dõi số liệu Actual/Forecast:
+- ForexFactory: https://www.forexfactory.com/calendar
+- TradingEconomics: https://tradingeconomics.com/calendar
 
 So sánh giữa số **Actual** (thực tế) và **Forecast** (dự báo):
 

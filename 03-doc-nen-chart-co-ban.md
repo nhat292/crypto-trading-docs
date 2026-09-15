@@ -17,6 +17,46 @@ giá đóng cửa (Close), giá cao nhất (High), giá thấp nhất (Low).
 - **Thân nến dài, không râu (hoặc râu rất ngắn)**: xu hướng dứt khoát, một
   phe áp đảo hoàn toàn trong khung thời gian đó.
 
+## 🕯️ Các mô hình nến (Candlestick Patterns)
+
+### 1️⃣ Mô hình nến đơn (Single Candlestick Patterns)
+
+Phản ánh sự biến động giá trong một khung thời gian duy nhất, thường phát
+tín hiệu đảo chiều hoặc tiếp diễn khi xuất hiện ở vùng S/R quan trọng.
+
+| Mô hình | Minh hoạ | Đặc điểm | Ý nghĩa |
+|---|---|---|---|
+| 🌀 Doji (Con xoay) | <img src="images/candles/doji.svg" width="70"> | Open ≈ Close, thân rất mỏng, có râu trên/dưới | Lưỡng lự, tranh chấp mạnh giữa phe mua/bán, không bên nào thắng thế — cảnh báo xu hướng hiện tại sắp đảo chiều |
+| 🔨 Hammer (Búa) | <img src="images/candles/hammer.svg" width="70"> | Thân nhỏ ở trên, râu dưới rất dài (≥ 2-3 lần thân), râu trên rất ngắn/không có | Xuất hiện ở **đáy** downtrend → báo hiệu đảo chiều **tăng** |
+| 🪢 Hanging Man (Người treo cổ) | <img src="images/candles/hanging-man.svg" width="70"> | Hình dạng giống Hammer | Xuất hiện ở **đỉnh** uptrend → báo hiệu đảo chiều **giảm** |
+| 🔨⤴️ Inverted Hammer (Búa ngược) | <img src="images/candles/inverted-hammer.svg" width="70"> | Thân nhỏ ở dưới, râu trên rất dài, râu dưới rất ngắn/không có | Xuất hiện cuối downtrend → báo hiệu đảo chiều **tăng** |
+| ⭐️💥 Shooting Star (Sao băng) | <img src="images/candles/shooting-star.svg" width="70"> | Hình dạng giống Inverted Hammer | Xuất hiện ở **đỉnh** uptrend → báo hiệu đảo chiều **giảm** mạnh (phe mua đẩy giá lên nhưng bị phe bán dập tắt) |
+| 🟩🟥 Marubozu (Nến cường lực) | <img src="images/candles/marubozu.svg" width="100"> | Thân rất dài, gần như không có râu | Lực mua (nến xanh) hoặc lực bán (nến đỏ) áp đảo hoàn toàn → xu hướng hiện tại tiếp diễn |
+
+### 2️⃣ Mô hình nến đôi & tổ hợp (Multiple Candlestick Patterns)
+
+Kết hợp từ 2-3 nến trở lên, độ tin cậy thường cao hơn nến đơn.
+
+| Mô hình | Minh hoạ | Đặc điểm | Ý nghĩa |
+|---|---|---|---|
+| 🟢🔴 Bullish Engulfing (Nhấn chìm tăng) | <img src="images/candles/bullish-engulfing.svg" width="110"> | Nến đỏ nhỏ, theo sau bởi nến xanh lớn nuốt trọn thân nến trước | Xuất hiện ở vùng hỗ trợ → đảo chiều **tăng** |
+| 🔴🟢 Bearish Engulfing (Nhấn chìm giảm) | <img src="images/candles/bearish-engulfing.svg" width="110"> | Nến xanh nhỏ, theo sau bởi nến đỏ lớn nuốt trọn thân nến trước | Xuất hiện ở vùng kháng cự → đảo chiều **giảm** |
+| ✂️⬆️ Tweezers Bottom (Nhíp đáy) | <img src="images/candles/tweezers-bottom.svg" width="110"> | 2 nến có cùng mức giá thấp nhất | Vùng hỗ trợ cứng, giá không phá được đáy chung → chuẩn bị đảo chiều tăng |
+| ✂️⬇️ Tweezers Top (Nhíp đỉnh) | <img src="images/candles/tweezers-top.svg" width="110"> | 2 nến có cùng mức giá cao nhất | Vùng kháng cự cứng, giá không phá được đỉnh chung → chuẩn bị đảo chiều giảm |
+| ☁️⬇️ Dark Cloud Cover (Mây đen che phủ) | <img src="images/candles/dark-cloud-cover.svg" width="110"> | Nến xanh dài → nến sau gap up nhưng đóng cửa giảm sâu, lấn > 50% thân nến trước | Xuất hiện ở đỉnh → đảo chiều **giảm** mạnh |
+| 🗡️⬆️ Piercing Line (Đường xuyên) | <img src="images/candles/piercing-line.svg" width="110"> | Nến đỏ dài → nến sau gap down nhưng đóng cửa tăng vượt > 50% thân nến trước | Xuất hiện ở đáy → đảo chiều **tăng** |
+| 🌅 Morning Star (Sao mai) | <img src="images/candles/morning-star.svg" width="150"> | Nến đỏ dài → nến thân nhỏ (Doji/Spinning top, có gap) → nến xanh dài phục hồi | Bộ 3 nến đảo chiều **tăng**, độ tin cậy rất cao |
+| 🌆 Evening Star (Sao hôm) | <img src="images/candles/evening-star.svg" width="150"> | Nến xanh dài → nến thân nhỏ (có gap) → nến đỏ dài xác nhận | Bộ 3 nến đảo chiều **giảm**, độ tin cậy rất cao |
+
+> [!TIP]
+> Lưu ý khi giao dịch với mô hình nến:
+> - **Không giao dịch đơn lẻ**: đặt mô hình nến trong bối cảnh thị trường
+>   (vùng S/R, MA, Volume) thay vì chỉ dựa vào một cây nến.
+> - **Khung thời gian**: mô hình ở khung lớn (Daily, 4H) đáng tin cậy hơn
+>   nhiều so với khung nhỏ (1m, 5m).
+> - **Chờ nến xác nhận**: với mô hình đảo chiều, đợi nến tiếp theo đóng cửa
+>   xác nhận hướng đi trước khi vào lệnh.
+
 ## 📶 Khối lượng giao dịch (Volume)
 
 Volume là tổng khối lượng coin được mua bán trong một khung thời gian,

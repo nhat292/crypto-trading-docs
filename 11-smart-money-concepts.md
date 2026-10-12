@@ -7,6 +7,10 @@ vị qua dữ liệu blockchain đã học ở
 cho nhau: on-chain cho biết *ai đang làm gì với coin thật*, còn SMC cho biết
 *dấu vết đó thể hiện như thế nào trên đồ thị giá*.
 
+"Price action" trong SMC không phải là soi các mô hình nến truyền thống
+(Vai-Đầu-Vai, Tam giác...), mà là đọc **ý đồ và dấu vết của smart money qua
+chuyển động của nến**: Liquidity Sweep, CHoCH, BOS, FVG, Inducement, Mitigation.
+
 ## 🐋 Smart Money là ai?
 
 - **Market maker / quỹ tổ chức / cá mập**: nhóm có vốn đủ lớn để tạo ra
@@ -38,6 +42,17 @@ cho nhau: on-chain cho biết *ai đang làm gì với coin thật*, còn SMC ch
 - **Sell-side liquidity**: nằm phía dưới các đáy gần nhất — nơi dồn lệnh
   Stop-Loss của phe Long.
 
+**Liquidity Sweep (quét thanh khoản)** là hành động giá quan trọng bậc nhất
+trong SMC: smart money "săn" các lệnh Stop-Loss của nhỏ lẻ trước khi đẩy giá
+theo hướng thực sự.
+
+- **Dấu hiệu nhận biết**: giá bất ngờ lao qua một đỉnh/đáy cũ (hoặc vùng
+  Equal Highs/Equal Lows) nhưng không đóng cửa vượt qua, mà rút râu nến quay
+  trở lại bên trong cấu trúc cũ.
+- **Ý nghĩa**: cú rút râu quét sạch thanh khoản dừng lỗ của đám đông, đồng
+  thời giúp phe tổ chức khớp được khối lượng lệnh mua/bán lớn cần cho nhịp di
+  chuyển thực sự.
+
 > [!IMPORTANT]
 > Giá có xu hướng bị đẩy về các vùng liquidity này để "quét" (liquidity
 > sweep/grab) trước khi đảo chiều thật — đây chính là cơ chế đứng sau kịch
@@ -67,6 +82,22 @@ hướng), sau đó đổi vai trò: Bullish OB bị phá thành kháng cự, Be
 phá thành hỗ trợ. Cùng nguyên tắc "vùng S/R đổi vai trò khi bị phá vỡ dứt
 khoát" đã nêu ở [📏 03-doc-nen-chart-co-ban.md](03-doc-nen-chart-co-ban.md).
 
+## ⚡ Imbalance / FVG (Fair Value Gap)
+
+Khoảng mất cân bằng nghiêm trọng giữa lực mua và lực bán, tạo ra một nhịp
+di chuyển "nhanh và gấp" khiến nhiều lệnh chưa kịp khớp.
+
+- **Dấu hiệu nhận biết**: xét bộ 3 nến liên tiếp. Nến số 2 có thân rất dài,
+  và xuất hiện khoảng trống giữa **râu trên của nến 1** và **râu dưới của
+  nến 3** (bullish FVG), hoặc ngược lại (bearish FVG).
+- **Ý nghĩa**: theo quy luật "giá có xu hướng quay về trạng thái cân bằng",
+  thị trường thường quay lại lấp (fill) khoảng FVG này trước khi tiếp tục
+  hành trình.
+
+> [!WARNING]
+> Cũng như Order Block, FVG chỉ là một yếu tố **confluence**, không phải
+> tín hiệu độc lập — không phải FVG nào cũng được giá quay lại fill.
+
 ## 🔄 BOS (Break of Structure) vs CHoCH (Change of Character)
 
 ```mermaid
@@ -83,9 +114,17 @@ flowchart LR
 
 - **BOS (Break of Structure)**: giá phá vỡ đỉnh/đáy theo đúng hướng trend
   hiện tại → xác nhận xu hướng tiếp diễn.
+  - *Dấu hiệu*: **thân nến đóng cửa** nằm ngoài đỉnh (uptrend) hoặc đáy
+    (downtrend) cũ. Nếu giá chỉ thò râu qua rồi rút lại, đó là Liquidity
+    Sweep chứ không phải BOS.
 - **CHoCH (Change of Character)**: giá phá vỡ cấu trúc theo hướng **ngược**
   với trend hiện tại lần đầu tiên → tín hiệu cảnh báo sớm khả năng đảo
   chiều, cần theo dõi sát thay vì vào lệnh ngay.
+  - *Uptrend*: giá tạo đỉnh mới nhưng ngay sau đó quay xuống đóng cửa dưới
+    đáy gần nhất đã tạo ra đỉnh đó.
+  - *Downtrend*: giá tạo đáy mới nhưng ngay sau đó bật lên đóng cửa trên
+    đỉnh gần nhất đã tạo ra đáy đó.
+  - *Ý nghĩa*: phe kiểm soát cũ đã kiệt sức, phe đối lập bắt đầu chiếm ưu thế.
 
 ## 💰 Premium / Discount Zone
 
@@ -110,11 +149,34 @@ di chuyển theo hướng smart money nhắm tới. Về bản chất, đây là
 price-action của "bẫy diễn kịch" đã mô tả ở kịch bản Bear Trap/Bull Trap tại
 file 09.
 
+- **Dấu hiệu nhận biết**: nhịp điều chỉnh đầu tiên (hoặc các đỉnh/đáy nhỏ)
+  hình thành ngay trước một vùng Order Block hoặc FVG mạnh.
+- **Ý nghĩa**: nhỏ lẻ thường nhầm các điểm này là hỗ trợ/kháng cự cứng để
+  vào lệnh. Smart money đẩy giá quét qua inducement (ăn SL của nhỏ lẻ) rồi
+  mới phản ứng thật tại Order Block phía sau.
+
 ## 🩹 Mitigation
 
 Khi giá quay lại một Order Block cũ để "hoàn tất" các lệnh tổ chức chưa
 khớp hết, trước khi tiếp tục di chuyển theo xu hướng chính — đây thường là
 điểm vào lệnh có R:R tốt vì SL có thể đặt sát ngay sau vùng Order Block.
+
+- **Dấu hiệu nhận biết**: sau một đợt đẩy giá mạnh (BOS), giá hồi nhẹ
+  (pullback) về lại một OB/FVG chưa được khai thác (*unmitigated*).
+- **Ý nghĩa**: khi đẩy giá mạnh, smart money cũng có một số vị thế đang lỗ
+  tạm thời. Nhịp mitigation là lúc đưa giá về hòa vốn cho các vị thế đó, đồng
+  thời nhồi thêm lệnh theo xu hướng chính.
+
+## 📋 Tóm tắt các hành động giá SMC
+
+| Hành động giá | Tín hiệu chính | Vai trò trong giao dịch |
+| --- | --- | --- |
+| Liquidity Sweep | Rút râu qua đỉnh/đáy cũ rồi quay lại | Báo hiệu vùng cạn kiệt thanh khoản, chuẩn bị đảo chiều |
+| CHoCH | Phá đỉnh/đáy đã tạo ra xu hướng hiện tại | Dấu hiệu đảo chiều xu hướng sớm |
+| BOS | Thân nến đóng cửa vượt đỉnh/đáy cũ | Xác nhận xu hướng tiếp diễn |
+| FVG / Imbalance | Khoảng trống giữa râu nến 1 và nến 3 | Vùng hút giá quay lại để fill lệnh |
+| Inducement (IDM) | Đỉnh/đáy nhỏ làm mồi nhử trước OB/FVG | Bẫy nhỏ lẻ vào lệnh sớm |
+| Mitigation | Giá hồi về test OB/FVG chưa được khai thác | Điểm vào lệnh (Entry) cùng chiều smart money |
 
 ## 🔗 Chu trình SMC điển hình
 
@@ -143,7 +205,7 @@ flowchart TD
 > SMC **không thay thế** 5 câu hỏi bắt buộc ở
 > [✅ 04-quy-tac-vao-lenh.md](04-quy-tac-vao-lenh.md) — nó làm rõ hơn câu
 > hỏi số 2 ("Setup có đủ confluence không?"). Một setup SMC vững cần tối
-> thiểu: Liquidity sweep đã xảy ra + Order Block hợp lệ + CHoCH/BOS xác nhận
+> thiểu: Liquidity sweep đã xảy ra + Order Block/FVG hợp lệ + CHoCH/BOS xác nhận
 > + nằm đúng vùng Premium/Discount theo hướng trend. Thiếu một trong các yếu
 > tố này, coi như confluence chưa đủ — quay lại quy tắc "không đủ 5 câu hỏi
 > → không vào lệnh".

@@ -77,7 +77,7 @@ flowchart TD
 | 8 | [🕐 Khung giờ giao dịch](08-khung-gio-giao-dich.md) | Phiên Á/Âu/Mỹ và giờ "tử thần" |
 | 9 | [🐋 Đọc vị cá mập & on-chain](09-doc-vi-ca-map-onchain.md) | Inflow/outflow, exchange reserve, OI |
 | 10 | [📓 Nhật ký giao dịch](10-nhat-ky-giao-dich.md) | Mẫu nhật ký và checklist review |
-| 11 | [🧭 Smart Money Concepts](11-smart-money-concepts.md) | Liquidity, Order Block, BOS/CHoCH, Premium/Discount |
+| 11 | [🧭 Smart Money Concepts](11-smart-money-concepts.md) | Liquidity Sweep, Order Block, FVG, BOS/CHoCH, Premium/Discount |
 
 ## 🧭 Cách dùng bộ tài liệu
 
